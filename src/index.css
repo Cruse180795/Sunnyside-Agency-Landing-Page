@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+    --color-green-300: hsl(168, 44%, 70%);
+    --color-green-500: hsl(167, 34%, 41%);
+    --color-green-600: hsl(166, 30%, 35%);
+    --color-green-800: hsl(167, 40%, 24%);
+
+    --color-gray-400: hsl(210, 4%, 67%);
+    --color-gray-550: hsl(232, 10%, 55%);
+    --color-gray-600: hsl(213, 9%, 39%);
+    --color-gray-950: hsl(212, 27%, 19%);
+
+    --color-blue-800: hsl(198, 62%, 26%);
+    --color-blue-950: hsl(197, 84%, 13%);
+
+    --color-red-400: hsl(7, 99%, 70%);
+
+    --color-yellow-500: hsl(51, 100%, 49%);
+
+    --font-barlow: "Barlow";
+    --font-fraunces: "Fraunces";
+
+    --text-15: 0.938rem;
+    --text-28: 1.75rem;
+    --text-32: 2rem;
+    --text-40: 2.5rem;
+    --text-42: 2.625rem;
+    --text-56: 3.5rem;
+
+    --leading-125: 125%;
+    --leading-165: 165%;
+    --leading-170: 170%;
+    --leading-180: 180%;
+
+    --tracking-wide-1: 1px;
+    --tracking-wide-4: 4px;
+    --tracking-wide-6: 6px;
+    --tracking-wide-9: 9px;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("assets/fonts/Barlow/Barlow-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.woff2") format("woff2");
+    font-weight: 700 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+body,
+li > a {
+    font-family: var(--font-barlow);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+    font-family: var(--font-fraunces);
+}
