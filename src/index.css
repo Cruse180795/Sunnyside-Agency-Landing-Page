@@ -58,6 +58,7 @@
 body,
 li > a {
     font-family: var(--font-barlow);
+    font-weight: 600;
 }
 
 h1,

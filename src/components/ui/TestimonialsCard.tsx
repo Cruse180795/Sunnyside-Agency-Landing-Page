@@ -25,10 +25,11 @@ export default function TestimonialsCard({
       />
 
       {/** Testimonial Content */}
-      <div className="space-y-8 text-center lg:space-y-18">
+      <div className="space-y-8 text-center md:space-y-14 lg:space-y-18">
         {/** Testimonial */}
         <p className="text-gray-600 text-lg leading-165">{testimonialText}</p>
 
+        {/** Client Details */}
         <div className="space-y-2">
           {/** Client Name */}
           <h2 className="text-lg font-black leading-125">{clientName}</h2>
