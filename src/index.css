@@ -71,3 +71,59 @@ a,
 button {
     font-family: var(--font-fraunces);
 }
+
+.about-section-content-wrapper {
+    @apply px-6 py-16 text-center space-y-6 md:space-y-8 md:max-w-112.75 md:px-0 md:mx-auto lg:text-left lg:flex lg:justify-center lg:flex-col lg:max-w-111.25;
+}
+
+.about-section-content-sub-wrapper {
+    @apply space-y-6 md:space-y-8 lg:space-y-10;
+}
+
+.about-section-title {
+    @apply text-center font-black text-32 leading-125 text-gray-950 md:text-40;
+}
+
+.about-section-body {
+    @apply text-lg leading-165 text-gray-550;
+}
+
+.about-section-link {
+    @apply text-15 leading-165 font-black text-gray-950 w-fit font-fraunces cursor-pointer;
+}
+
+.highlight {
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    z-index: 0;
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: -0.5em;
+    right: -0.5em;
+    bottom: 0;
+    height: 10px;
+    background: var(--highlight-color, var(--color-yellow-500));
+    border-radius: 999px;
+    z-index: -1;
+    opacity: 25%;
+    transition: opacity 500ms ease-in-out;
+}
+
+/* override underline color in this section*/
+.standout-section {
+    --highlight-color: var(--color-red-400);
+}
+
+.highlight:hover::after {
+    opacity: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .highlight::after {
+        transition: none;
+    }
+}
