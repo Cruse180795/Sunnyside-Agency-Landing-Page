@@ -1,7 +1,7 @@
-import BottlesMobileImage from "../../assets/images/mobile/image-gallery-milkbottles.jpg";
-import OrangeMobileImage from "../../assets/images/mobile/image-gallery-orange.jpg";
-import ConeMobileImage from "../../assets/images/mobile/image-gallery-cone.jpg";
-import SugarCubesMobileImage from "../../assets/images/mobile/image-gallery-sugar-cubes.jpg";
+import BottlesMobileImage from "../../assets/images/mobile/image-gallery-milkbottles.webp";
+import OrangeMobileImage from "../../assets/images/mobile/image-gallery-orange.webp";
+import ConeMobileImage from "../../assets/images/mobile/image-gallery-cone.webp";
+import SugarCubesMobileImage from "../../assets/images/mobile/image-gallery-sugar-cubes.webp";
 
 import BottlesDesktopImage from "../../assets/images/desktop/image-gallery-milkbottles.webp";
 import OrangeDesktopImage from "../../assets/images/desktop/image-gallery-orange.webp";
