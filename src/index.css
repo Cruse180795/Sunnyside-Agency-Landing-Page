@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 @theme {
     --color-green-300: hsl(168, 44%, 70%);
     --color-green-500: hsl(167, 34%, 41%);
@@ -70,6 +74,19 @@ h6,
 a,
 button {
     font-family: var(--font-fraunces);
+}
+
+header {
+    background-image: url("assets/images/mobile/image-header.webp");
+    background-size: cover;
+    background-position: top;
+    height: 540px;
+
+    @media screen and (min-width: 1024px) {
+        background-image: url("assets/images/desktop/image-header.webp");
+        background-position: top;
+        height: 100vh;
+    }
 }
 
 .about-section-content-wrapper {
