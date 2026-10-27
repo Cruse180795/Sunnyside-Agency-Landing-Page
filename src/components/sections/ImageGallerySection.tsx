@@ -37,7 +37,7 @@ const images = [
 
 export default function ImageGallerySection() {
   return (
-    <section className="grid grid-cols-2 lg:grid-cols-4" aria-label="Image gallery">
+    <section className="grid grid-cols-2 lg:grid-cols-4" aria-label="Image gallery" id="projects">
       {images.map((image) => (
         <picture key={image.id} className="block">
           <source

@@ -76,19 +76,6 @@ button {
     font-family: var(--font-fraunces);
 }
 
-header {
-    background-image: url("assets/images/mobile/image-header.webp");
-    background-size: cover;
-    background-position: top;
-    height: 540px;
-
-    @media screen and (min-width: 1024px) {
-        background-image: url("assets/images/desktop/image-header.webp");
-        background-position: top;
-        height: 100vh;
-    }
-}
-
 .about-section-content-wrapper {
     @apply px-6 py-16 text-center space-y-6 md:space-y-8 md:max-w-112.75 md:px-0 md:mx-auto lg:text-left lg:flex lg:justify-center lg:flex-col lg:max-w-111.25;
 }
@@ -107,6 +94,36 @@ header {
 
 .about-section-link {
     @apply text-15 leading-165 font-black text-gray-950 w-fit font-fraunces cursor-pointer;
+}
+
+.services-section-content-wrapper {
+    @apply flex flex-col justify-end py-14;
+}
+
+.services-section-content-sub-wrapper {
+    @apply space-y-8 text-center px-4 md:px-0 md:max-w-84.75 md:mx-auto;
+}
+
+.services-section-title {
+    @apply text-28 font-black leading-125;
+}
+
+.services-section-body {
+    @apply leading-170;
+}
+
+header {
+    background-image: url("assets/images/mobile/image-header.webp");
+    background-size: cover;
+    background-position: top;
+    min-height: 33.75rem; /*540px*/
+
+    /*768px*/
+    @media screen and (min-width: 48rem) {
+        background-image: url("assets/images/desktop/image-header.webp");
+        background-position: center;
+        min-height: 100dvh;
+    }
 }
 
 .highlight {
@@ -142,5 +159,31 @@ header {
 @media (prefers-reduced-motion: reduce) {
     .highlight::after {
         transition: none;
+    }
+}
+
+.graphic-design-bg {
+    background-image: url("assets/images/mobile/image-graphic-design.webp");
+    background-size: cover;
+    background-position: center top;
+    min-height: 37.5rem; /*600px*/
+
+    /*768px*/
+    @media screen and (min-width: 48rem) {
+        background-image: url("assets/images/desktop/image-graphic-design.webp");
+        aspect-ratio: 720 / 600;
+    }
+}
+
+.photography-bg {
+    background-image: url("assets/images/mobile/image-photography.webp");
+    background-size: cover;
+    background-position: center top;
+    min-height: 37.5rem; /*600px*/
+
+    /*768px*/
+    @media screen and (min-width: 48rem) {
+        background-image: url("assets/images/desktop/image-photography.webp");
+        aspect-ratio: 720 / 600;
     }
 }
