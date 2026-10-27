@@ -65,12 +65,12 @@ li > a {
     font-weight: 600;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
 h6,
+h5,
+h4,
+h3,
+h2,
+h1,
 a,
 button {
     font-family: var(--font-fraunces);
@@ -139,7 +139,7 @@ header {
     left: -0.5em;
     right: -0.5em;
     bottom: 0;
-    height: 10px;
+    height: 0.625rem;
     background: var(--highlight-color, var(--color-yellow-500));
     border-radius: 999px;
     z-index: -1;
